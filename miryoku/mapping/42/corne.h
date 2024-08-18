@@ -4,10 +4,12 @@
 #if !defined (MIRYOKU_LAYOUTMAPPING_CORNE)
 
 #define XXX &none
-#define XLT  &kp TAB
+#define XLT  &tog 4 // Toggle Nav layer
 #define XLM  &caps_word
 #define XLB  &kp LSHIFT
+#define XRT  &tog 7 // Toggle Number layer
 #define XRM  &key_repeat
+#define XRB  &tog 8 // Toggle Symbol layer
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
      K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
@@ -15,9 +17,9 @@
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-XXX  K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  XXX \
+XLT  K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  XRT \
 XLM  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  XRM \
-XLB  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  XXX \
+XLB  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  XRB \
                K32  K33  K34       K35  K36  K37
 
 #define MIRYOKU_KLUDGE_TOPROWCOMBOS_LEFTPINKIE 2 3
