@@ -4,3 +4,7 @@
 #define MIRYOKU_CLIPBOARD_MAC
 #define MIRYOKU_LAYERS_FLIP
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
+
+&mt {
+    retro-tap;
+};
